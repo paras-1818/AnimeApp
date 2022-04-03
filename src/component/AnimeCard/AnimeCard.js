@@ -1,6 +1,6 @@
 //  anime card will come here
 import React, { Component } from "react";
-
+import './AnimeCard.css'
 class AnimeCard extends Component {
   constructor(props) {
     super(props);

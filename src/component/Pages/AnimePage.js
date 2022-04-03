@@ -28,7 +28,7 @@ class AnimePage extends Component {
       <div>
         <NavBar />
         <center>
-          <h1>Anime Details</h1>
+          <h1 className="my-3">Anime Details</h1>
         </center>
         <div className="container">
           <div className="row">

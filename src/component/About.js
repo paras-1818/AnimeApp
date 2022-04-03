@@ -6,7 +6,7 @@ class About extends Component {
     return (
       <div>
         <NavBar/>
-      <center><h1>My Contact Info</h1></center>
+      <center className="my-3"><h1>My Contact Info</h1></center>
       <div class='container'>
         <div className= "row">
           <div className="col-md-4">

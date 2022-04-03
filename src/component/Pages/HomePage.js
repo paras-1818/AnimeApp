@@ -21,15 +21,15 @@ class HomePage extends Component {
   }
   render() {
     return (
-      <div clasName="container my-3">
+      <div >
         <NavBar />
 
         <center>
-          <h1>Animes</h1>
+          <h1 className="my-3">Animes</h1>
         </center>
       <div div className="row">
         {this.state.data.map((item, index) => (
-          <div className="col-md-4">
+          <div className="col-md-4 my-3">
             <AnimeCard data={item} />
           </div>
 
