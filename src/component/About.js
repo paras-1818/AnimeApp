@@ -1,58 +1,35 @@
 import React, { Component } from "react";
+import NavBar from "./NavBar/NavBar";
 
 class About extends Component {
   render() {
     return (
       <div>
-        <div className="accordion" id="accordionExample">
-          <div className="accordion-item">
-            <h2 className="accordion-header" id="headingOne">
-              <button
-                className="accordion-button"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseOne"
-                aria-expanded="true"
-                aria-controls="collapseOne"
-              >
-                My Name
-              </button>
-            </h2>
-            <div
-              id="collapseOne"
-              className="accordion-collapse collapse show"
-              aria-labelledby="headingOne"
-              data-bs-parent="#accordionExample"
-            >
-              <div className="accordion-body">
-                <strong>Hello My name is Paras Meena</strong>
-              </div>
-            </div>
+        <NavBar/>
+      <center><h1>My Contact Info</h1></center>
+      <div class='container'>
+        <div className= "row">
+          <div className="col-md-4">
+          <img src={require ('../paras.jpg')} width='300px' height= '300px'/>
           </div>
-          <div className="accordion-item">
-            <h2 className="accordion-header" id="headingTwo">
-              <button
-                className="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseTwo"
-                aria-expanded="false"
-                aria-controls="collapseTwo"
-              >
-                My College
-              </button>
-            </h2>
-            <div
-              id="collapseTwo"
-              className="accordion-collapse collapse"
-              aria-labelledby="headingTwo"
-              data-bs-parent="#accordionExample"
-            >
-              <div className="accordion-body">
-                <strong>My college is IIT Khargpur</strong>
+          <div className='col-md-8' width='300px' height='300px'>
+              <div className='Name my-3' >
+               <div ><b>Name: </b> Paras Meena</div> 
               </div>
-            </div>
+              <div className='College my-3' >
+              <div ><b>College: </b>Indian Institute of Technology Kharagpur</div>
+              </div>
+              <div className='Email my-3' >
+              <div ><b>EmailId: </b>paraskr098@gmail.com</div>
+              </div>
+              <div className='Role my-3' >
+              <div ><b> Role: </b>Front-End Web Developer</div>
+              </div>
+              <div className='skills my-3' >
+              <div ><b>Skills: </b>React and JavaScript</div>
+              </div> 
           </div>
+        </div>
         </div>
       </div>
     );
