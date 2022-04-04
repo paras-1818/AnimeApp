@@ -12,7 +12,7 @@ class AnimePage extends Component {
 
   async componentDidMount() {
     let animeId = window.location.href.split("?id=")[1];
-    let response = await fetch(
+    let response = await fetch(     
       `https://ghibliapi.herokuapp.com/films/${animeId}`,
       {
         headers: {

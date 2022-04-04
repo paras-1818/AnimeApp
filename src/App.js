@@ -5,6 +5,7 @@ import './App.css';
 import HomePage from './component/Pages/HomePage';
 import AnimePage from './component/Pages/AnimePage';
 import About from './component/About'
+ 
 function App() {
   return (<>
     <Router>
